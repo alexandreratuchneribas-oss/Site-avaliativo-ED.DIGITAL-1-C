@@ -1,0 +1,133 @@
+/* Design System */
+:root {
+  --cor-primaria: #5a2b94; /* Cor principal (roxo) */
+  --cor-secundaria: #ff6f61; /* Cor secundária (laranja) */
+  --cor-fundo: #f7f7f7; /* Fundo claro */
+  --cor-texto: #333333; /* Texto escuro */
+  --cor-destaque: #ffd700; /* Cor de destaque (amarelo) */
+  --radius: 8px; /* Raio de borda */
+  --espaçamento: 1rem; /* Espaçamento base */
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: var(--espaçamento);
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Seções */
+section {
+  padding: 2rem;
+}
+
+#introducao {
+  background-color: var(--cor-secundaria);
+  color: white;
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards de instrumentos */
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.card h3 {
+  margin: 1rem 0;
+}
+
+/* Carrossel */
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.carousel-container img {
+  border-radius: var(--radius);
+  width: 300px;
+  height: auto;
+}
+
+/* Modo de Alto Contraste */
+body.high-contrast {
+  background-color: black;
+  color: white;
+}
+
+body.high-contrast .card, 
+body.high-contrast footer {
+  background-color: #333333;
+  color: white;
+}
+
+body.high-contrast .card h3 {
+  color: var(--cor-destaque);
+}
+
+/* Responsividade - Mobile First */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
