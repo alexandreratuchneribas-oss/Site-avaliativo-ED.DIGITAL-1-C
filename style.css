@@ -1,11 +1,11 @@
 /* Design System */
 :root {
-  --cor-primaria: #5a2b94; /* Cor principal (roxo) */
-  --cor-secundaria: #ff6f61; /* Cor secundária (laranja) */
+  --cor-primaria: #e26a2c; /* Cor principal (laranja claro) */
+  --cor-secundaria: #f4d03f; /* Cor secundária (amarelo) */
   --cor-fundo: #f7f7f7; /* Fundo claro */
   --cor-texto: #333333; /* Texto escuro */
-  --cor-destaque: #ffd700; /* Cor de destaque (amarelo) */
-  --radius: 8px; /* Raio de borda */
+  --cor-destaque: #2c3e50; /* Cor de destaque (cinza escuro) */
+  --radius: 10px; /* Raio de borda */
   --espaçamento: 1rem; /* Espaçamento base */
 }
 
@@ -64,7 +64,7 @@ h1, h2 {
   margin-bottom: 1rem;
 }
 
-/* Cards de instrumentos */
+/* Cards de tipos de coxinhas */
 .cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
