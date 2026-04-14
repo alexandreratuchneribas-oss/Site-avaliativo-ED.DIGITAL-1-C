@@ -1,18 +1,16 @@
-// Dados de Instrumentos Musicais
-const instrumentos = [
-  { nome: "Guitarra", imagem: "https://images.unsplash.com/photo-1527071021696-64d57b443d96?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8OXx8Z3uitaXJ8ZW58MHx8fHwxNjcwMDgwNzYw&ixlib=rb-1.2.1&q=80&w=400" },
-  { nome: "Piano", imagem: "https://images.unsplash.com/photo-1563591459-d497f5be6060?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8Mnx8cGlhbm98ZW58MHx8fHwxNjY5ODg1Njk0&ixlib=rb-1.2.1&q=80&w=400" },
-  { nome: "Bateria", imagem: "https://images.unsplash.com/photo-1530437006256-1587c978c21f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8MTF8fGJhdGVyeXxlbnwxfHx8fDE2NzYwMjI5Njg&ixlib=rb-1.2.1&q=80&w=400" },
-  { nome: "Violino", imagem: "https://images.unsplash.com/photo-1526233295764-8286d7e897a9?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8Mnx8Vm9saW5vfGVufDB8fHx8fDE2NzYwMjMwNzI&ixlib=rb-1.2.1&q=80&w=400" },
-  { nome: "Saxofone", imagem: "https://images.unsplash.com/photo-1535946903721-93732514be56?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8Mnx8U2F4b2ZvbmUgfGVufDB8fHx8fDE2NzYwMjM4NzI&ixlib=rb-1.2.1&q=80&w=400" },
-  { nome: "Flauta", imagem: "https://images.unsplash.com/photo-1548197013-27186bb61b85?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8Mnx8RmxhdXRhfGVufDB8fHx8fDE2NzYwMjQyNzQ&ixlib=rb-1.2.1&q=80&w=400" }
+// Dados sobre os Tipos de Coxinhas
+const coxinhas = [
+  { nome: "Coxinha de Frango", imagem: "https://images.unsplash.com/photo-1594714568967-b484a97a5f78?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8Mnx8Q29oaW5oYSBkZSBmcmFuZ28gfGVufDB8fHx8fDE2NzYwMzI2NzI&ixlib=rb-1.2.1&q=80&w=400" },
+  { nome: "Coxinha de Carne", imagem: "https://images.unsplash.com/photo-1605903964136-d0f1b1ac0a52?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8Mnx8Q29oaW5oYSBkZSBjYXJuZXxlbnwxfHx8fDE2NzYwMzI5Mzk&ixlib=rb-1.2.1&q=80&w=400" },
+  { nome: "Coxinha Vegana", imagem: "https://images.unsplash.com/photo-1597566474644-973d45919b1f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8Mnx8Q29oaW5oYSBkZSB2ZWdhbmF8ZW58MHx8fHx8fDE2NzYwMzI3NTg&ixlib=rb-1.2.1&q=80&w=400" },
+  { nome: "Coxinha de Queijo", imagem: "https://images.unsplash.com/photo-1597534532652-f292eb7d628d?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8Nnx8Q29oaW5oYSBkZSBxdWVpam98ZW58MHx8fHx8fDE2NzYwMzI1MTY&ixlib=rb-1.2.1&q=80&w=400" },
+  { nome: "Coxinha de Camarão", imagem: "https://images.unsplash.com/photo-1608505979360-df871568674b?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2NzN8MHx8c2VhY2h8NXx8Q29oaW5oYSBkZSBjYW1hcsbhxZW58MHx8fHx8fDE2NzYwMzI1NzI&ixlib=rb-1.2.1&q=80&w=400" }
 ];
 
-// Função para renderizar os cards de instrumentos
+// Função para renderizar os cards de tipos de coxinhas
 function renderizarCards() {
   const container = document.querySelector(".cards-container");
-  instrumentos.forEach(instrumento => {
+  coxinhas.forEach(coxinha => {
     const card = document.createElement("div");
     card.classList.add("card");
-    card.innerHTML = `
-      <img src="${instrumento.imagem}" alt="Imagem do ${instrumento
+    card
