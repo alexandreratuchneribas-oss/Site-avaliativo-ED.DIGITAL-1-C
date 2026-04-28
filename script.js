@@ -1,20 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const botao = document.getElementById('btn-saiba-mais');
+    // Seleciona todos os botões de pedir
+    const botoesPedir = document.querySelectorAll('.btn-pedir');
 
-    botao.addEventListener('click', () => {
-        alert('🍗 Hummm! Estamos preparando sua coxinha virtual. Em breve você poderá fazer pedidos reais por aqui!');
-        
-        // Exemplo de log no console para desenvolvedores
-        console.log('O usuário clicou no botão de pedido.');
-    });
-
-    // Efeito de scroll suave para os links internos
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+    botoesPedir.forEach(botao => {
+        botao.addEventListener('click', (e) => {
+            // Pega o nome da coxinha clicada (o h3 acima do botão)
+            const nomeCoxinha = e.target.parentElement.querySelector('h3').innerText;
+            
+            // Simula uma ação de pedido
+            alert(`✅ Você adicionou uma "${nomeCoxinha}" ao seu pedido!`);
         });
     });
 });
