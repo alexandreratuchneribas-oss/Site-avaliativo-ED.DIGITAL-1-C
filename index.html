@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coxinha Mania | O Sabor Perfeito</title>
+    <title>Coxinha Mania | O Salgado Perfeito</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="logo">Coxinha<span>Mania</span></div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sabores">Sabores</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -21,37 +21,60 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>A Melhor Coxinha da Região</h1>
-            <p>Massa de batata real, recheio generoso e aquela crocância que você ama.</p>
-            <button id="btn-saiba-mais">Quero uma agora!</button>
+            <h1>A Melhor Coxinha Artesanal</h1>
+            <p>Massa de batata real, crocância incomparável e recheios suculentos.</p>
+            <a href="#sabores" class="btn-principal">Ver Cardápio</a>
         </div>
     </section>
 
     <section id="sabores" class="container">
-        <h2>Nossos Sabores</h2>
+        <h2 class="titulo-secao">Nossos Sabores</h2>
+        <p class="subtitulo">Escolha sua favorita e peça agora!</p>
+        
         <div class="grid-sabores">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=500" alt="Coxinha Tradicional">
-                <h3>Tradicional</h3>
-                <p>Frango desfiado com tempero da casa e massa de batata.</p>
+                <div class="img-container">
+                    <img src="frango.jpg" alt="Coxinha de Frango Tradicional" onerror="this.src='https://via.placeholder.com/400x300?text=Coxinha+Frango'">
+                </div>
+                <div class="card-body">
+                    <h3>Frango Tradicional</h3>
+                    <p>O clássico inesquecível: frango desfiado com tempero da casa e massa de batata douradinha.</p>
+                    <button class="btn-pedir">Pedir Agora</button>
+                </div>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=500" alt="Coxinha com Catupiry">
-                <h3>Com Catupiry</h3>
-                <p>O clássico que nunca falha: frango com o verdadeiro cremoso.</p>
+                <div class="img-container">
+                    <img src="catupiry.jpg" alt="Coxinha de Frango com Catupiry" onerror="this.src='https://via.placeholder.com/400x300?text=Coxinha+Catupiry'">
+                </div>
+                <div class="card-body">
+                    <h3>Frango com Catupiry</h3>
+                    <p>Nossa tradicional coxinha de frango com o verdadeiro e cremoso Catupiry original.</p>
+                    <button class="btn-pedir">Pedir Agora</button>
+                </div>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=500" alt="Coxinha de Costela">
-                <h3>Costela</h3>
-                <p>Sabor intenso e carne de costela desfiada premium.</p>
+                <div class="img-container">
+                    <img src="costela.jpg" alt="Coxinha de Costela" onerror="this.src='https://via.placeholder.com/400x300?text=Coxinha+Costela'">
+                </div>
+                <div class="card-body">
+                    <h3>Costela Premium</h3>
+                    <p>Massa especial recheada com costela bovina desfiada, cozida lentamente e muito suculenta.</p>
+                    <button class="btn-pedir">Pedir Agora</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Coxinha Mania - Feito com ❤️ para o GitHub</p>
+    <footer id="contato">
+        <div class="footer-content">
+            <p><strong>Coxinha Mania</strong></p>
+            <p>Rua das Coxinhas, 123 - Centro</p>
+            <p>WhatsApp: (11) 99999-9999</p>
+            <hr>
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
