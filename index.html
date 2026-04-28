@@ -1,60 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Coxinhas Deliciosas</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coxinha Mania | O Sabor Perfeito</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#secoes">Tipos de Coxinhas</a></li>
-        <li><a href="#carrossel">Carrossel de Imagens</a></li>
-        <li><a href="#sobre">Sobre Nós</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">Coxinha<span>Mania</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sabores">Sabores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-
-    <!-- Seção de Introdução -->
-    <section id="introducao">
-      <h1>Coxinhas Deliciosas: Uma Explosão de Sabor</h1>
-      <p>Descubra as melhores variações de coxinhas e escolha sua favorita para saborear!</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>A Melhor Coxinha da Região</h1>
+            <p>Massa de batata real, recheio generoso e aquela crocância que você ama.</p>
+            <button id="btn-saiba-mais">Quero uma agora!</button>
+        </div>
     </section>
 
-    <!-- Seção de Tipos de Coxinhas -->
-    <section id="secoes">
-      <h2>Tipos de Coxinhas</h2>
-      <div class="cards-container" role="region" aria-labelledby="secoes">
-        <!-- Os cards de tipos de coxinhas serão renderizados dinamicamente via JS -->
-      </div>
+    <section id="sabores" class="container">
+        <h2>Nossos Sabores</h2>
+        <div class="grid-sabores">
+            <div class="card">
+                <h3>Tradicional</h3>
+                <p>Frango desfiado com tempero da casa.</p>
+            </div>
+            <div class="card">
+                <h3>Com Catupiry</h3>
+                <p>O clássico que nunca falha.</p>
+            </div>
+            <div class="card">
+                <h3>Costela</h3>
+                <p>Sabor intenso e carne desfiada premium.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Carrossel de Imagens -->
-    <section id="carrossel">
-      <h2>Veja Mais</h2>
-      <div class="carousel-container" role="region" aria-labelledby="carrossel">
-        <!-- Carrossel de imagens renderizado dinamicamente via JS -->
-      </div>
-    </section>
+    <footer>
+        <p>&copy; 2024 Coxinha Mania - Feito com ❤️ para o GitHub</p>
+    </footer>
 
-    <!-- Seção de Sobre -->
-    <section id="sobre">
-      <h2>Sobre Nós</h2>
-      <p>Somos uma empresa apaixonada por coxinhas e temos o objetivo de compartilhar as melhores receitas com o mundo!</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Coxinhas Deliciosas. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
